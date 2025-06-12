@@ -1,0 +1,1001 @@
+Age,Gender,Smoker,PreExistingCondition,Lifestyle,IncomeBracket,EstimatedCoverage_Lakhs
+58,Female,No,Hypertension,Sedentary,<5L,16.0
+25,Male,No,None,Sedentary,>20L,20.7
+19,Female,No,None,Active,>20L,25.1
+65,Female,Yes,Hypertension,Moderate,10L-20L,39.7
+35,Female,Yes,Heart Disease,Moderate,<5L,29.7
+33,Female,No,Hypertension,Moderate,>20L,31.5
+32,Female,Yes,None,Moderate,10L-20L,29.4
+26,Female,No,Hypertension,Sedentary,5L-10L,17.8
+65,Male,No,None,Active,<5L,14.7
+24,Male,No,Heart Disease,Active,10L-20L,30.6
+61,Male,No,Heart Disease,Moderate,5L-10L,27.3
+65,Male,Yes,Hypertension,Active,>20L,46.7
+52,Female,No,None,Active,>20L,28.4
+23,Male,Yes,Heart Disease,Sedentary,>20L,40.5
+55,Male,Yes,Diabetes,Sedentary,5L-10L,28.7
+45,Male,No,Hypertension,Active,5L-10L,24.7
+20,Male,No,Diabetes,Moderate,>20L,28.2
+19,Male,Yes,Hypertension,Moderate,>20L,40.1
+23,Male,No,None,Sedentary,5L-10L,10.5
+31,Male,No,None,Active,10L-20L,21.3
+32,Female,No,Diabetes,Active,<5L,16.4
+50,Female,Yes,None,Active,>20L,38.2
+56,Female,Yes,None,Sedentary,5L-10L,23.8
+19,Female,Yes,None,Sedentary,10L-20L,25.1
+53,Male,No,Diabetes,Active,10L-20L,28.5
+30,Male,No,None,Moderate,10L-20L,19.2
+63,Female,No,Heart Disease,Moderate,>20L,37.5
+59,Female,No,Hypertension,Sedentary,5L-10L,21.1
+62,Female,Yes,Heart Disease,Moderate,<5L,32.4
+52,Male,Yes,Diabetes,Moderate,5L-10L,31.4
+44,Male,No,Diabetes,Active,5L-10L,22.6
+32,Female,Yes,None,Active,10L-20L,31.4
+46,Male,Yes,Heart Disease,Moderate,<5L,30.8
+55,Female,Yes,Diabetes,Sedentary,>20L,38.7
+35,Male,Yes,Hypertension,Active,>20L,43.7
+18,Male,No,Diabetes,Moderate,10L-20L,23.0
+28,Male,No,Heart Disease,Active,>20L,36.0
+62,Female,No,Hypertension,Active,5L-10L,26.4
+45,Male,Yes,Hypertension,Moderate,10L-20L,37.7
+39,Male,Yes,None,Moderate,<5L,20.1
+35,Male,No,Hypertension,Sedentary,5L-10L,18.7
+27,Male,No,None,Moderate,<5L,8.9
+31,Female,Yes,None,Active,<5L,21.3
+39,Female,No,Diabetes,Sedentary,5L-10L,17.1
+24,Female,No,Diabetes,Moderate,<5L,13.6
+23,Male,No,None,Active,10L-20L,20.5
+42,Female,No,Heart Disease,Sedentary,10L-20L,27.4
+24,Female,No,None,Sedentary,5L-10L,10.6
+40,Female,No,Heart Disease,Sedentary,>20L,32.2
+40,Female,Yes,Hypertension,Active,<5L,29.2
+56,Female,No,Hypertension,Active,5L-10L,25.8
+34,Female,No,Hypertension,Sedentary,<5L,13.6
+20,Male,Yes,None,Active,5L-10L,25.2
+64,Male,No,Heart Disease,Sedentary,<5L,19.6
+47,Female,No,None,Sedentary,>20L,22.9
+52,Female,Yes,Hypertension,Active,5L-10L,35.4
+25,Female,No,Diabetes,Active,10L-20L,25.7
+42,Male,No,Hypertension,Sedentary,>20L,29.4
+23,Male,Yes,Hypertension,Active,10L-20L,37.5
+53,Male,Yes,Diabetes,Moderate,>20L,41.5
+36,Male,No,Heart Disease,Sedentary,10L-20L,26.8
+58,Female,Yes,Hypertension,Sedentary,>20L,41.0
+57,Male,No,Heart Disease,Active,<5L,23.9
+41,Male,Yes,Diabetes,Active,10L-20L,37.3
+54,Female,Yes,Diabetes,Active,<5L,28.6
+30,Female,Yes,Diabetes,Moderate,5L-10L,29.2
+63,Female,Yes,None,Active,<5L,24.5
+22,Male,Yes,Heart Disease,Sedentary,10L-20L,35.4
+20,Female,Yes,None,Active,>20L,35.2
+60,Female,No,Diabetes,Active,<5L,19.2
+32,Male,No,Hypertension,Sedentary,>20L,28.4
+36,Female,No,None,Sedentary,5L-10L,11.8
+23,Female,Yes,Hypertension,Moderate,5L-10L,30.5
+32,Female,No,None,Active,10L-20L,21.4
+24,Female,Yes,Heart Disease,Moderate,>20L,43.6
+42,Female,No,Hypertension,Sedentary,<5L,14.4
+35,Male,No,None,Sedentary,<5L,6.7
+47,Male,Yes,Diabetes,Sedentary,5L-10L,27.9
+58,Female,Yes,Diabetes,Sedentary,>20L,39.0
+41,Female,Yes,Heart Disease,Sedentary,>20L,42.3
+28,Female,No,Heart Disease,Moderate,5L-10L,24.0
+41,Female,No,None,Active,<5L,12.3
+40,Female,No,Diabetes,Sedentary,5L-10L,17.2
+31,Male,No,Hypertension,Active,>20L,33.3
+60,Female,Yes,None,Sedentary,<5L,19.2
+35,Male,No,None,Moderate,5L-10L,14.7
+62,Female,No,Diabetes,Moderate,>20L,32.4
+61,Female,No,Heart Disease,Moderate,>20L,37.3
+59,Female,No,Hypertension,Moderate,10L-20L,29.1
+22,Male,No,Heart Disease,Active,10L-20L,30.4
+56,Female,Yes,None,Moderate,5L-10L,26.8
+58,Male,Yes,None,Moderate,<5L,22.0
+28,Female,No,Diabetes,Moderate,<5L,14.0
+52,Female,No,Heart Disease,Sedentary,10L-20L,28.4
+64,Male,Yes,None,Moderate,>20L,37.6
+33,Male,No,None,Active,10L-20L,21.5
+28,Female,No,Heart Disease,Sedentary,5L-10L,21.0
+47,Female,Yes,Diabetes,Active,10L-20L,37.9
+42,Female,No,Diabetes,Sedentary,<5L,12.4
+35,Male,No,Hypertension,Active,5L-10L,23.7
+58,Male,No,Hypertension,Active,<5L,21.0
+62,Female,No,Hypertension,Active,5L-10L,26.4
+53,Male,No,Heart Disease,Sedentary,>20L,33.5
+32,Female,No,Hypertension,Active,10L-20L,28.4
+61,Female,Yes,Hypertension,Active,<5L,31.3
+38,Female,No,Heart Disease,Sedentary,5L-10L,22.0
+21,Male,No,Hypertension,Active,10L-20L,27.3
+32,Male,No,Diabetes,Sedentary,<5L,11.4
+20,Male,Yes,None,Moderate,>20L,33.2
+38,Male,No,Diabetes,Active,5L-10L,22.0
+43,Female,Yes,Diabetes,Sedentary,<5L,22.5
+35,Male,No,None,Moderate,<5L,9.7
+22,Female,Yes,Diabetes,Active,>20L,40.4
+31,Male,No,None,Moderate,5L-10L,14.3
+54,Male,No,Diabetes,Active,10L-20L,28.6
+63,Male,No,Heart Disease,Sedentary,<5L,19.5
+38,Female,No,Heart Disease,Moderate,5L-10L,25.0
+31,Male,Yes,Hypertension,Moderate,5L-10L,31.3
+59,Male,Yes,Heart Disease,Moderate,>20L,47.1
+49,Female,No,None,Moderate,<5L,11.1
+43,Female,No,Hypertension,Active,10L-20L,29.5
+59,Female,Yes,Diabetes,Sedentary,<5L,24.1
+47,Female,Yes,Heart Disease,Moderate,<5L,30.9
+27,Female,Yes,Hypertension,Sedentary,10L-20L,32.9
+34,Female,Yes,Heart Disease,Active,5L-10L,36.6
+26,Male,Yes,Hypertension,Sedentary,<5L,22.8
+33,Female,Yes,None,Sedentary,5L-10L,21.5
+65,Male,Yes,None,Active,>20L,39.7
+53,Female,Yes,Diabetes,Moderate,5L-10L,31.5
+52,Male,Yes,Hypertension,Active,10L-20L,40.4
+34,Male,No,None,Moderate,10L-20L,19.6
+65,Male,No,Diabetes,Active,>20L,34.7
+55,Female,No,Hypertension,Sedentary,5L-10L,20.7
+45,Female,Yes,Diabetes,Moderate,<5L,25.7
+55,Female,Yes,None,Active,>20L,38.7
+43,Female,Yes,Diabetes,Active,10L-20L,37.5
+41,Male,Yes,Hypertension,Active,5L-10L,34.3
+32,Female,No,Heart Disease,Moderate,10L-20L,29.4
+26,Female,No,None,Sedentary,<5L,5.8
+50,Female,No,Hypertension,Active,>20L,35.2
+49,Male,Yes,Hypertension,Active,>20L,45.1
+23,Female,No,Diabetes,Sedentary,10L-20L,20.5
+21,Female,No,None,Sedentary,>20L,20.3
+25,Female,No,Heart Disease,Sedentary,5L-10L,20.7
+27,Female,Yes,Heart Disease,Sedentary,5L-10L,30.9
+58,Female,Yes,Diabetes,Active,10L-20L,39.0
+28,Female,Yes,None,Active,10L-20L,31.0
+61,Female,Yes,Heart Disease,Moderate,>20L,47.3
+45,Male,Yes,None,Active,10L-20L,32.7
+56,Male,No,Diabetes,Active,5L-10L,23.8
+22,Female,Yes,None,Sedentary,<5L,15.4
+42,Male,Yes,None,Moderate,5L-10L,25.4
+42,Female,No,None,Sedentary,>20L,22.4
+56,Male,No,Diabetes,Active,10L-20L,28.8
+47,Female,Yes,Diabetes,Active,10L-20L,37.9
+51,Female,No,Diabetes,Active,10L-20L,28.3
+34,Female,Yes,Heart Disease,Moderate,>20L,44.6
+53,Female,Yes,Hypertension,Sedentary,<5L,25.5
+18,Male,No,None,Moderate,>20L,23.0
+61,Female,Yes,Hypertension,Active,5L-10L,36.3
+64,Male,No,None,Active,<5L,14.6
+25,Male,No,None,Sedentary,10L-20L,15.7
+61,Female,No,None,Sedentary,5L-10L,14.3
+52,Male,No,Diabetes,Sedentary,10L-20L,23.4
+35,Female,Yes,Heart Disease,Sedentary,<5L,26.7
+59,Male,No,Diabetes,Active,>20L,34.1
+39,Female,No,None,Moderate,5L-10L,15.1
+25,Male,Yes,Hypertension,Sedentary,>20L,37.7
+36,Male,Yes,None,Sedentary,5L-10L,21.8
+45,Female,No,None,Sedentary,10L-20L,17.7
+28,Male,Yes,Heart Disease,Active,10L-20L,41.0
+47,Male,No,None,Active,>20L,27.9
+18,Female,No,Diabetes,Sedentary,10L-20L,20.0
+64,Female,Yes,Heart Disease,Active,<5L,34.6
+64,Female,Yes,Heart Disease,Moderate,<5L,32.6
+34,Female,No,Heart Disease,Active,<5L,21.6
+50,Male,No,None,Active,<5L,13.2
+29,Female,Yes,Heart Disease,Sedentary,5L-10L,31.1
+50,Female,Yes,Heart Disease,Moderate,5L-10L,36.2
+24,Female,No,Diabetes,Active,<5L,15.6
+58,Female,No,Hypertension,Sedentary,5L-10L,21.0
+37,Male,No,Diabetes,Moderate,<5L,14.9
+58,Male,Yes,Diabetes,Sedentary,>20L,39.0
+50,Male,No,Hypertension,Sedentary,5L-10L,20.2
+56,Female,Yes,Hypertension,Active,<5L,30.8
+30,Male,Yes,Heart Disease,Active,<5L,31.2
+27,Male,Yes,Diabetes,Moderate,>20L,38.9
+41,Female,No,None,Moderate,>20L,25.3
+28,Male,No,Diabetes,Moderate,10L-20L,24.0
+52,Male,Yes,Hypertension,Sedentary,<5L,25.4
+51,Female,Yes,Heart Disease,Active,10L-20L,43.3
+18,Male,No,Heart Disease,Active,5L-10L,25.0
+56,Female,No,Heart Disease,Sedentary,<5L,18.8
+38,Male,Yes,None,Sedentary,<5L,17.0
+49,Male,No,None,Moderate,5L-10L,16.1
+19,Female,No,Hypertension,Active,>20L,32.1
+25,Male,No,Heart Disease,Sedentary,<5L,15.7
+41,Female,No,Diabetes,Sedentary,>20L,27.3
+37,Female,Yes,Heart Disease,Moderate,<5L,29.9
+33,Female,No,Diabetes,Moderate,10L-20L,24.5
+21,Female,No,Diabetes,Moderate,>20L,28.3
+33,Male,Yes,None,Moderate,10L-20L,29.5
+54,Male,Yes,Heart Disease,Active,<5L,33.6
+23,Female,Yes,Hypertension,Active,10L-20L,37.5
+23,Male,No,Heart Disease,Moderate,<5L,18.5
+64,Male,No,Heart Disease,Active,<5L,24.6
+49,Male,Yes,Hypertension,Active,10L-20L,40.1
+22,Male,No,Hypertension,Sedentary,<5L,12.4
+52,Female,No,Heart Disease,Active,5L-10L,28.4
+26,Male,Yes,Hypertension,Active,<5L,27.8
+26,Female,No,Diabetes,Moderate,<5L,13.8
+60,Male,No,None,Moderate,5L-10L,17.2
+48,Male,Yes,Hypertension,Moderate,>20L,43.0
+53,Female,Yes,Diabetes,Sedentary,5L-10L,28.5
+28,Female,Yes,None,Sedentary,5L-10L,21.0
+34,Female,No,Hypertension,Moderate,5L-10L,21.6
+51,Female,Yes,None,Sedentary,5L-10L,23.3
+56,Male,No,Heart Disease,Sedentary,>20L,33.8
+45,Female,No,Hypertension,Active,<5L,19.7
+31,Female,No,Diabetes,Active,10L-20L,26.3
+52,Male,No,Diabetes,Active,>20L,33.4
+64,Male,Yes,None,Moderate,>20L,37.6
+62,Female,Yes,Diabetes,Moderate,<5L,27.4
+30,Female,Yes,Diabetes,Moderate,5L-10L,29.2
+63,Female,No,Hypertension,Sedentary,5L-10L,21.5
+37,Female,No,None,Active,>20L,26.9
+43,Female,Yes,Diabetes,Active,10L-20L,37.5
+60,Female,Yes,Heart Disease,Moderate,5L-10L,37.2
+59,Female,Yes,Hypertension,Moderate,>20L,44.1
+41,Male,Yes,Diabetes,Moderate,10L-20L,35.3
+46,Female,Yes,Diabetes,Moderate,10L-20L,35.8
+51,Female,Yes,Diabetes,Moderate,10L-20L,36.3
+46,Male,No,Hypertension,Moderate,10L-20L,27.8
+25,Male,No,Hypertension,Moderate,>20L,30.7
+33,Female,Yes,None,Active,>20L,36.5
+32,Female,Yes,Hypertension,Sedentary,10L-20L,33.4
+22,Female,No,Diabetes,Sedentary,5L-10L,15.4
+39,Female,Yes,Diabetes,Active,5L-10L,32.1
+19,Male,No,Heart Disease,Active,>20L,35.1
+55,Female,Yes,Hypertension,Sedentary,10L-20L,35.7
+53,Female,No,Diabetes,Moderate,10L-20L,26.5
+32,Male,Yes,Heart Disease,Sedentary,>20L,41.4
+55,Male,No,None,Active,>20L,28.7
+32,Female,No,None,Sedentary,>20L,21.4
+18,Female,Yes,None,Moderate,<5L,18.0
+22,Male,No,Diabetes,Active,<5L,15.4
+63,Female,No,Diabetes,Active,10L-20L,29.5
+58,Male,Yes,None,Sedentary,<5L,19.0
+21,Male,No,Heart Disease,Active,5L-10L,25.3
+32,Female,No,None,Sedentary,10L-20L,16.4
+22,Male,Yes,Hypertension,Sedentary,<5L,22.4
+20,Male,Yes,Diabetes,Active,10L-20L,35.2
+39,Male,Yes,Diabetes,Active,5L-10L,32.1
+22,Female,Yes,Hypertension,Sedentary,5L-10L,27.4
+50,Female,No,Diabetes,Active,10L-20L,28.2
+33,Male,No,Hypertension,Active,<5L,18.5
+35,Female,Yes,None,Moderate,10L-20L,29.7
+60,Male,Yes,None,Active,5L-10L,29.2
+49,Male,Yes,Diabetes,Sedentary,<5L,23.1
+31,Female,No,Diabetes,Sedentary,<5L,11.3
+52,Female,Yes,None,Active,>20L,38.4
+26,Female,No,Hypertension,Moderate,10L-20L,25.8
+64,Male,No,None,Active,5L-10L,19.6
+54,Male,Yes,Hypertension,Active,5L-10L,35.6
+54,Male,Yes,Heart Disease,Moderate,10L-20L,41.6
+48,Female,No,None,Active,10L-20L,23.0
+33,Female,No,Hypertension,Sedentary,5L-10L,18.5
+48,Male,No,Hypertension,Moderate,5L-10L,23.0
+44,Female,No,Hypertension,Moderate,10L-20L,27.6
+30,Female,No,Diabetes,Sedentary,10L-20L,21.2
+24,Female,No,Diabetes,Active,<5L,15.6
+24,Female,Yes,Heart Disease,Active,>20L,45.6
+60,Male,Yes,Heart Disease,Moderate,5L-10L,37.2
+45,Female,No,Hypertension,Sedentary,<5L,14.7
+40,Male,Yes,Diabetes,Moderate,10L-20L,35.2
+45,Male,Yes,Hypertension,Active,>20L,44.7
+44,Male,No,Diabetes,Active,5L-10L,22.6
+47,Female,Yes,Diabetes,Sedentary,>20L,37.9
+64,Female,Yes,Heart Disease,Moderate,<5L,32.6
+21,Male,Yes,Hypertension,Moderate,10L-20L,35.3
+61,Female,Yes,Hypertension,Active,<5L,31.3
+59,Male,No,Diabetes,Sedentary,>20L,29.1
+59,Female,No,Diabetes,Active,<5L,19.1
+24,Male,No,None,Sedentary,<5L,5.6
+21,Female,No,Heart Disease,Active,10L-20L,30.3
+43,Female,Yes,None,Active,10L-20L,32.5
+64,Female,Yes,Diabetes,Sedentary,>20L,39.6
+39,Female,No,Hypertension,Active,>20L,34.1
+24,Female,No,Diabetes,Sedentary,<5L,10.6
+33,Male,Yes,None,Moderate,5L-10L,24.5
+30,Male,No,Heart Disease,Sedentary,<5L,16.2
+30,Female,Yes,Diabetes,Sedentary,>20L,36.2
+52,Male,Yes,Hypertension,Active,<5L,30.4
+46,Female,Yes,None,Active,10L-20L,32.8
+26,Male,No,Diabetes,Active,<5L,15.8
+45,Male,Yes,Hypertension,Sedentary,10L-20L,34.7
+29,Female,Yes,Hypertension,Active,5L-10L,33.1
+35,Female,Yes,Diabetes,Active,10L-20L,36.7
+47,Female,Yes,None,Moderate,5L-10L,25.9
+33,Male,Yes,Hypertension,Moderate,5L-10L,31.5
+22,Male,Yes,Heart Disease,Sedentary,<5L,25.4
+46,Male,No,None,Sedentary,>20L,22.8
+53,Male,Yes,Hypertension,Moderate,>20L,43.5
+24,Female,Yes,Diabetes,Sedentary,<5L,20.6
+21,Female,Yes,Diabetes,Sedentary,5L-10L,25.3
+59,Male,No,None,Moderate,>20L,27.1
+52,Male,No,Hypertension,Moderate,10L-20L,28.4
+18,Male,Yes,Hypertension,Sedentary,>20L,37.0
+23,Male,Yes,None,Sedentary,5L-10L,20.5
+33,Female,Yes,None,Active,5L-10L,26.5
+28,Female,Yes,None,Sedentary,10L-20L,26.0
+44,Female,No,Heart Disease,Active,<5L,22.6
+49,Female,Yes,Heart Disease,Moderate,>20L,46.1
+48,Male,No,Heart Disease,Moderate,<5L,21.0
+31,Female,No,Diabetes,Moderate,>20L,29.3
+43,Male,Yes,Heart Disease,Moderate,10L-20L,40.5
+21,Female,No,Heart Disease,Sedentary,<5L,15.3
+28,Female,Yes,Heart Disease,Sedentary,>20L,41.0
+42,Female,Yes,Hypertension,Active,>20L,44.4
+18,Male,No,Heart Disease,Moderate,5L-10L,23.0
+42,Female,No,None,Sedentary,5L-10L,12.4
+34,Male,No,Heart Disease,Active,>20L,36.6
+47,Female,Yes,Diabetes,Active,5L-10L,32.9
+36,Female,Yes,Diabetes,Active,>20L,41.8
+45,Male,No,Heart Disease,Moderate,>20L,35.7
+62,Female,No,None,Active,5L-10L,19.4
+64,Male,Yes,None,Moderate,5L-10L,27.6
+53,Female,No,Hypertension,Active,5L-10L,25.5
+60,Female,No,None,Active,<5L,14.2
+63,Male,No,Hypertension,Active,10L-20L,31.5
+49,Female,No,Hypertension,Sedentary,>20L,30.1
+27,Female,No,None,Moderate,10L-20L,18.9
+30,Male,Yes,None,Active,<5L,21.2
+36,Male,No,Hypertension,Moderate,<5L,16.8
+31,Female,No,Diabetes,Moderate,>20L,29.3
+21,Male,Yes,Heart Disease,Active,>20L,45.3
+55,Male,No,Diabetes,Active,10L-20L,28.7
+65,Male,Yes,None,Sedentary,10L-20L,29.7
+52,Male,Yes,None,Active,5L-10L,28.4
+21,Female,No,Hypertension,Moderate,10L-20L,25.3
+65,Male,Yes,Heart Disease,Moderate,10L-20L,42.7
+38,Male,No,None,Sedentary,<5L,7.0
+21,Male,Yes,Heart Disease,Active,10L-20L,40.3
+21,Male,No,Diabetes,Moderate,5L-10L,18.3
+55,Male,No,Heart Disease,Moderate,10L-20L,31.7
+48,Male,Yes,Diabetes,Moderate,>20L,41.0
+50,Male,No,None,Moderate,5L-10L,16.2
+51,Female,Yes,None,Moderate,>20L,36.3
+28,Male,No,Hypertension,Active,<5L,18.0
+21,Male,Yes,Diabetes,Sedentary,5L-10L,25.3
+50,Female,No,Diabetes,Active,5L-10L,23.2
+23,Male,Yes,Heart Disease,Sedentary,10L-20L,35.5
+29,Male,No,Hypertension,Moderate,5L-10L,21.1
+22,Female,No,Hypertension,Sedentary,<5L,12.4
+56,Male,Yes,Hypertension,Sedentary,<5L,25.8
+22,Male,Yes,Diabetes,Sedentary,<5L,20.4
+61,Male,Yes,None,Active,5L-10L,29.3
+33,Male,No,None,Active,5L-10L,16.5
+43,Male,No,Heart Disease,Moderate,10L-20L,30.5
+25,Female,Yes,Heart Disease,Sedentary,<5L,25.7
+54,Male,Yes,Diabetes,Sedentary,10L-20L,33.6
+33,Female,Yes,None,Sedentary,<5L,16.5
+55,Male,Yes,Hypertension,Sedentary,10L-20L,35.7
+56,Male,No,None,Moderate,>20L,26.8
+20,Female,Yes,Heart Disease,Active,>20L,45.2
+57,Male,No,None,Active,<5L,13.9
+23,Male,No,Hypertension,Sedentary,10L-20L,22.5
+44,Female,Yes,Heart Disease,Active,5L-10L,37.6
+60,Male,Yes,Diabetes,Sedentary,5L-10L,29.2
+55,Male,Yes,None,Moderate,5L-10L,26.7
+54,Female,Yes,None,Moderate,10L-20L,31.6
+51,Female,No,Diabetes,Active,>20L,33.3
+38,Female,Yes,Diabetes,Sedentary,5L-10L,27.0
+34,Male,Yes,Hypertension,Moderate,<5L,26.6
+31,Female,No,None,Active,>20L,26.3
+60,Male,Yes,Heart Disease,Moderate,<5L,32.2
+63,Male,No,None,Moderate,10L-20L,22.5
+38,Female,No,Hypertension,Sedentary,5L-10L,19.0
+33,Female,No,Heart Disease,Active,<5L,21.5
+34,Male,No,Heart Disease,Sedentary,10L-20L,26.6
+43,Male,No,Heart Disease,Active,5L-10L,27.5
+26,Female,No,Hypertension,Moderate,10L-20L,25.8
+60,Female,No,None,Sedentary,<5L,9.2
+59,Female,No,Heart Disease,Sedentary,>20L,34.1
+37,Male,No,Diabetes,Sedentary,<5L,11.9
+47,Female,No,Hypertension,Sedentary,<5L,14.9
+38,Female,Yes,Heart Disease,Active,>20L,47.0
+22,Male,No,Hypertension,Active,10L-20L,27.4
+18,Male,No,Diabetes,Sedentary,10L-20L,20.0
+47,Female,Yes,Heart Disease,Sedentary,<5L,27.9
+57,Male,No,None,Active,<5L,13.9
+54,Male,No,Hypertension,Active,10L-20L,30.6
+24,Male,No,Heart Disease,Sedentary,>20L,30.6
+22,Female,Yes,Heart Disease,Active,5L-10L,35.4
+52,Female,Yes,Hypertension,Sedentary,>20L,40.4
+31,Female,Yes,Diabetes,Sedentary,<5L,21.3
+50,Female,Yes,Hypertension,Sedentary,10L-20L,35.2
+34,Female,No,None,Moderate,>20L,24.6
+26,Female,No,Diabetes,Sedentary,<5L,10.8
+40,Male,No,None,Active,5L-10L,17.2
+22,Male,Yes,None,Moderate,5L-10L,23.4
+33,Male,Yes,Hypertension,Active,>20L,43.5
+41,Female,No,Heart Disease,Active,<5L,22.3
+36,Female,Yes,Diabetes,Active,<5L,26.8
+28,Male,No,None,Sedentary,5L-10L,11.0
+46,Female,Yes,Heart Disease,Active,10L-20L,42.8
+52,Female,No,Heart Disease,Active,10L-20L,33.4
+63,Female,No,Heart Disease,Active,>20L,39.5
+37,Female,No,Diabetes,Moderate,>20L,29.9
+57,Female,No,Heart Disease,Sedentary,5L-10L,23.9
+59,Male,No,Hypertension,Sedentary,<5L,16.1
+51,Female,No,None,Moderate,10L-20L,21.3
+18,Female,Yes,Heart Disease,Active,10L-20L,40.0
+60,Female,No,None,Moderate,10L-20L,22.2
+53,Female,Yes,Diabetes,Moderate,10L-20L,36.5
+37,Female,Yes,None,Sedentary,5L-10L,21.9
+60,Male,No,Heart Disease,Sedentary,10L-20L,29.2
+24,Female,Yes,Diabetes,Moderate,<5L,23.6
+26,Male,Yes,Diabetes,Active,10L-20L,35.8
+34,Male,Yes,Diabetes,Sedentary,>20L,36.6
+25,Male,Yes,Diabetes,Active,<5L,25.7
+24,Male,Yes,Diabetes,Sedentary,10L-20L,30.6
+65,Female,Yes,None,Active,5L-10L,29.7
+53,Male,No,Heart Disease,Active,5L-10L,28.5
+27,Female,Yes,None,Active,10L-20L,30.9
+35,Male,Yes,Heart Disease,Moderate,>20L,44.7
+36,Male,Yes,Diabetes,Sedentary,5L-10L,26.8
+56,Female,Yes,Diabetes,Active,<5L,28.8
+31,Male,Yes,Hypertension,Active,>20L,43.3
+63,Female,Yes,Hypertension,Moderate,5L-10L,34.5
+39,Female,No,None,Moderate,>20L,25.1
+31,Female,No,None,Active,5L-10L,16.3
+61,Male,Yes,Heart Disease,Active,5L-10L,39.3
+58,Female,No,Heart Disease,Sedentary,>20L,34.0
+34,Female,No,Hypertension,Sedentary,10L-20L,23.6
+50,Female,Yes,Hypertension,Moderate,10L-20L,38.2
+49,Male,Yes,Heart Disease,Moderate,>20L,46.1
+34,Male,No,None,Sedentary,5L-10L,11.6
+21,Male,Yes,Heart Disease,Sedentary,5L-10L,30.3
+23,Female,Yes,None,Sedentary,5L-10L,20.5
+58,Male,No,Heart Disease,Sedentary,5L-10L,24.0
+45,Male,No,Diabetes,Active,5L-10L,22.7
+35,Female,Yes,Diabetes,Active,10L-20L,36.7
+20,Female,No,None,Active,5L-10L,15.2
+18,Male,Yes,None,Moderate,>20L,33.0
+39,Female,Yes,None,Sedentary,5L-10L,22.1
+26,Male,Yes,Hypertension,Active,5L-10L,32.8
+58,Female,Yes,Hypertension,Sedentary,10L-20L,36.0
+34,Male,Yes,Heart Disease,Sedentary,<5L,26.6
+28,Female,Yes,Hypertension,Moderate,<5L,26.0
+65,Male,No,Heart Disease,Active,5L-10L,29.7
+46,Male,No,Heart Disease,Active,10L-20L,32.8
+53,Female,No,Heart Disease,Sedentary,5L-10L,23.5
+63,Female,No,None,Active,<5L,14.5
+45,Female,Yes,Diabetes,Active,10L-20L,37.7
+53,Female,No,Hypertension,Sedentary,>20L,30.5
+18,Male,No,Heart Disease,Sedentary,>20L,30.0
+25,Male,No,Diabetes,Moderate,10L-20L,23.7
+22,Male,Yes,Heart Disease,Active,>20L,45.4
+62,Female,Yes,None,Sedentary,10L-20L,29.4
+27,Male,No,Heart Disease,Active,5L-10L,25.9
+52,Male,Yes,Hypertension,Active,5L-10L,35.4
+20,Male,Yes,Diabetes,Sedentary,<5L,20.2
+41,Male,Yes,None,Active,5L-10L,27.3
+55,Male,No,Heart Disease,Active,5L-10L,28.7
+53,Female,No,Hypertension,Moderate,<5L,18.5
+27,Female,No,Hypertension,Active,10L-20L,27.9
+45,Female,No,None,Moderate,5L-10L,15.7
+26,Female,Yes,Hypertension,Moderate,5L-10L,30.8
+20,Male,Yes,Hypertension,Sedentary,5L-10L,27.2
+37,Female,Yes,Hypertension,Active,<5L,28.9
+41,Female,Yes,Hypertension,Active,10L-20L,39.3
+20,Female,No,Heart Disease,Moderate,<5L,18.2
+40,Male,No,None,Sedentary,>20L,22.2
+31,Male,No,Diabetes,Moderate,5L-10L,19.3
+61,Male,Yes,Diabetes,Moderate,>20L,42.3
+33,Male,Yes,Hypertension,Moderate,10L-20L,36.5
+60,Male,Yes,Heart Disease,Active,5L-10L,39.2
+24,Male,Yes,Hypertension,Active,>20L,42.6
+40,Female,No,Hypertension,Active,>20L,34.2
+53,Female,No,Heart Disease,Active,>20L,38.5
+44,Female,Yes,None,Sedentary,5L-10L,22.6
+57,Female,Yes,Diabetes,Moderate,5L-10L,31.9
+65,Female,No,Heart Disease,Sedentary,5L-10L,24.7
+27,Female,Yes,Diabetes,Moderate,5L-10L,28.9
+33,Female,Yes,Heart Disease,Moderate,<5L,29.5
+28,Male,No,Heart Disease,Sedentary,>20L,31.0
+29,Male,Yes,Hypertension,Sedentary,<5L,23.1
+44,Female,Yes,None,Moderate,10L-20L,30.6
+19,Female,Yes,Diabetes,Active,>20L,40.1
+29,Male,No,None,Active,5L-10L,16.1
+65,Female,Yes,Hypertension,Moderate,5L-10L,34.7
+39,Female,No,Heart Disease,Moderate,5L-10L,25.1
+44,Female,Yes,Diabetes,Sedentary,<5L,22.6
+60,Male,Yes,None,Sedentary,5L-10L,24.2
+65,Male,No,Diabetes,Active,>20L,34.7
+33,Female,No,Diabetes,Active,>20L,31.5
+35,Male,No,Diabetes,Sedentary,10L-20L,21.7
+28,Male,Yes,None,Active,>20L,36.0
+62,Male,Yes,Diabetes,Active,5L-10L,34.4
+24,Female,No,None,Sedentary,>20L,20.6
+42,Male,Yes,Heart Disease,Active,>20L,47.4
+20,Male,Yes,None,Sedentary,<5L,15.2
+48,Female,No,Hypertension,Moderate,>20L,33.0
+32,Female,Yes,Diabetes,Active,10L-20L,36.4
+30,Female,Yes,Hypertension,Sedentary,>20L,38.2
+47,Male,No,Hypertension,Active,<5L,19.9
+40,Male,No,Heart Disease,Moderate,<5L,20.2
+37,Female,No,Heart Disease,Moderate,>20L,34.9
+32,Female,Yes,None,Moderate,>20L,34.4
+32,Male,No,None,Sedentary,<5L,6.4
+19,Male,No,Diabetes,Sedentary,5L-10L,15.1
+60,Female,No,Hypertension,Moderate,>20L,34.2
+30,Male,Yes,Heart Disease,Active,<5L,31.2
+43,Female,No,Heart Disease,Active,>20L,37.5
+39,Male,No,Diabetes,Moderate,<5L,15.1
+35,Female,No,Heart Disease,Moderate,5L-10L,24.7
+22,Male,Yes,Hypertension,Active,10L-20L,37.4
+35,Female,No,Hypertension,Moderate,>20L,31.7
+40,Male,Yes,Diabetes,Active,>20L,42.2
+59,Female,No,Hypertension,Moderate,10L-20L,29.1
+50,Male,Yes,None,Active,10L-20L,33.2
+43,Female,Yes,Hypertension,Moderate,>20L,42.5
+61,Female,Yes,None,Active,5L-10L,29.3
+52,Female,No,Heart Disease,Moderate,>20L,36.4
+39,Female,Yes,None,Sedentary,10L-20L,27.1
+19,Female,No,Diabetes,Moderate,<5L,13.1
+25,Male,Yes,Diabetes,Active,5L-10L,30.7
+34,Female,No,Diabetes,Active,>20L,31.6
+29,Male,No,Diabetes,Moderate,>20L,29.1
+55,Female,No,Diabetes,Sedentary,<5L,13.7
+34,Male,Yes,Hypertension,Moderate,<5L,26.6
+20,Female,Yes,Heart Disease,Active,5L-10L,35.2
+24,Female,Yes,None,Active,5L-10L,25.6
+56,Male,No,None,Moderate,>20L,26.8
+45,Female,No,Heart Disease,Moderate,>20L,35.7
+40,Male,No,Diabetes,Moderate,10L-20L,25.2
+64,Male,No,Diabetes,Active,>20L,34.6
+38,Female,Yes,None,Moderate,<5L,20.0
+45,Female,Yes,Diabetes,Active,5L-10L,32.7
+56,Male,Yes,Hypertension,Moderate,>20L,43.8
+50,Female,Yes,Hypertension,Active,5L-10L,35.2
+25,Female,No,Hypertension,Sedentary,>20L,27.7
+42,Female,No,Heart Disease,Active,<5L,22.4
+54,Male,No,Heart Disease,Sedentary,10L-20L,28.6
+30,Female,Yes,Hypertension,Active,10L-20L,38.2
+34,Male,Yes,Heart Disease,Sedentary,5L-10L,31.6
+20,Male,Yes,Hypertension,Moderate,<5L,25.2
+63,Male,No,Diabetes,Active,<5L,19.5
+45,Male,Yes,Heart Disease,Sedentary,<5L,27.7
+18,Female,No,Hypertension,Sedentary,>20L,27.0
+51,Female,No,Heart Disease,Sedentary,10L-20L,28.3
+52,Male,Yes,None,Active,<5L,23.4
+61,Male,No,None,Moderate,>20L,27.3
+64,Male,No,Hypertension,Moderate,5L-10L,24.6
+65,Male,No,Hypertension,Active,>20L,36.7
+65,Female,Yes,Hypertension,Active,>20L,46.7
+60,Male,Yes,None,Active,<5L,24.2
+30,Male,Yes,Heart Disease,Active,5L-10L,36.2
+41,Male,No,None,Active,10L-20L,22.3
+45,Male,Yes,Hypertension,Sedentary,5L-10L,29.7
+22,Male,Yes,Hypertension,Sedentary,5L-10L,27.4
+60,Female,No,Hypertension,Moderate,5L-10L,24.2
+39,Female,No,Hypertension,Active,5L-10L,24.1
+57,Female,No,Hypertension,Sedentary,<5L,15.9
+38,Female,No,Hypertension,Sedentary,>20L,29.0
+60,Female,Yes,Diabetes,Sedentary,10L-20L,34.2
+25,Male,Yes,Diabetes,Moderate,10L-20L,33.7
+64,Female,Yes,Diabetes,Active,>20L,44.6
+37,Male,No,None,Moderate,10L-20L,19.9
+50,Female,No,Heart Disease,Sedentary,5L-10L,23.2
+37,Female,No,Hypertension,Sedentary,<5L,13.9
+60,Female,No,Diabetes,Moderate,5L-10L,22.2
+44,Female,No,None,Sedentary,5L-10L,12.6
+38,Male,Yes,Heart Disease,Moderate,<5L,30.0
+43,Female,No,Hypertension,Sedentary,10L-20L,24.5
+62,Male,No,Hypertension,Active,<5L,21.4
+36,Female,Yes,Heart Disease,Sedentary,>20L,41.8
+53,Female,No,Heart Disease,Active,>20L,38.5
+26,Female,Yes,Heart Disease,Moderate,>20L,43.8
+30,Male,No,None,Moderate,<5L,9.2
+44,Male,Yes,Diabetes,Active,>20L,42.6
+60,Female,Yes,Hypertension,Active,5L-10L,36.2
+42,Female,No,Diabetes,Active,5L-10L,22.4
+61,Male,Yes,Heart Disease,Moderate,>20L,47.3
+65,Male,No,Hypertension,Active,>20L,36.7
+29,Female,No,Hypertension,Active,>20L,33.1
+57,Female,No,Diabetes,Sedentary,>20L,28.9
+54,Male,No,Diabetes,Sedentary,<5L,13.6
+37,Female,No,Hypertension,Active,<5L,18.9
+43,Male,No,None,Moderate,5L-10L,15.5
+53,Female,No,Heart Disease,Moderate,10L-20L,31.5
+18,Female,Yes,Diabetes,Sedentary,5L-10L,25.0
+37,Male,No,Hypertension,Sedentary,<5L,13.9
+36,Male,No,Diabetes,Active,5L-10L,21.8
+31,Female,Yes,Hypertension,Active,5L-10L,33.3
+45,Male,No,None,Moderate,<5L,10.7
+55,Female,No,Diabetes,Sedentary,10L-20L,23.7
+56,Male,Yes,Hypertension,Sedentary,<5L,25.8
+59,Male,No,Diabetes,Active,5L-10L,24.1
+38,Male,No,Hypertension,Active,<5L,19.0
+47,Male,No,Heart Disease,Active,10L-20L,32.9
+46,Female,No,Hypertension,Active,10L-20L,29.8
+46,Female,Yes,Hypertension,Sedentary,<5L,24.8
+61,Male,No,Hypertension,Active,<5L,21.3
+31,Female,No,Hypertension,Sedentary,<5L,13.3
+50,Female,No,Heart Disease,Active,>20L,38.2
+48,Female,No,None,Sedentary,5L-10L,13.0
+65,Female,No,Heart Disease,Moderate,5L-10L,27.7
+28,Female,Yes,None,Sedentary,10L-20L,26.0
+60,Female,Yes,None,Active,5L-10L,29.2
+23,Male,Yes,Heart Disease,Sedentary,>20L,40.5
+36,Female,Yes,Diabetes,Sedentary,10L-20L,31.8
+50,Male,No,None,Sedentary,<5L,8.2
+60,Female,Yes,Heart Disease,Moderate,<5L,32.2
+58,Male,No,Hypertension,Moderate,10L-20L,29.0
+57,Female,No,Heart Disease,Moderate,10L-20L,31.9
+39,Female,Yes,None,Active,10L-20L,32.1
+23,Female,No,Diabetes,Moderate,>20L,28.5
+33,Male,No,Diabetes,Moderate,<5L,14.5
+61,Female,Yes,Diabetes,Active,>20L,44.3
+37,Male,No,Hypertension,Sedentary,<5L,13.9
+32,Male,Yes,Heart Disease,Active,10L-20L,41.4
+30,Female,No,Heart Disease,Sedentary,>20L,31.2
+27,Female,Yes,Diabetes,Active,5L-10L,30.9
+19,Female,No,Hypertension,Active,<5L,17.1
+20,Male,No,Diabetes,Sedentary,10L-20L,20.2
+33,Male,Yes,None,Sedentary,10L-20L,26.5
+48,Female,No,Heart Disease,Active,>20L,38.0
+57,Female,No,Hypertension,Moderate,5L-10L,23.9
+22,Female,No,Diabetes,Active,5L-10L,20.4
+47,Male,No,Hypertension,Active,<5L,19.9
+44,Male,Yes,None,Active,<5L,22.6
+58,Female,No,None,Moderate,<5L,12.0
+54,Female,Yes,Heart Disease,Moderate,>20L,46.6
+30,Male,Yes,Hypertension,Moderate,10L-20L,36.2
+63,Female,Yes,Diabetes,Sedentary,>20L,39.5
+62,Female,No,Diabetes,Active,10L-20L,29.4
+42,Male,Yes,Diabetes,Sedentary,10L-20L,32.4
+49,Male,Yes,Heart Disease,Moderate,10L-20L,41.1
+43,Female,No,None,Moderate,5L-10L,15.5
+33,Female,No,Diabetes,Active,>20L,31.5
+27,Male,No,Heart Disease,Sedentary,>20L,30.9
+59,Male,Yes,Heart Disease,Moderate,>20L,47.1
+62,Male,Yes,Heart Disease,Sedentary,5L-10L,34.4
+18,Male,Yes,Heart Disease,Moderate,5L-10L,33.0
+24,Male,No,Heart Disease,Active,10L-20L,30.6
+45,Female,Yes,Heart Disease,Sedentary,5L-10L,32.7
+32,Male,Yes,None,Active,<5L,21.4
+29,Male,No,None,Sedentary,<5L,6.1
+62,Female,No,Diabetes,Active,<5L,19.4
+51,Male,No,Hypertension,Moderate,>20L,33.3
+47,Female,No,None,Moderate,<5L,10.9
+21,Male,Yes,Hypertension,Sedentary,5L-10L,27.3
+53,Male,No,Diabetes,Active,>20L,33.5
+33,Male,Yes,None,Moderate,>20L,34.5
+25,Male,No,None,Active,<5L,10.7
+47,Female,Yes,Diabetes,Active,10L-20L,37.9
+26,Male,No,Diabetes,Moderate,10L-20L,23.8
+47,Female,No,Hypertension,Active,5L-10L,24.9
+60,Female,Yes,Hypertension,Moderate,<5L,29.2
+51,Male,Yes,Diabetes,Moderate,5L-10L,31.3
+53,Female,Yes,None,Active,10L-20L,33.5
+56,Female,No,Heart Disease,Moderate,10L-20L,31.8
+38,Female,No,Hypertension,Sedentary,<5L,14.0
+46,Male,No,Diabetes,Moderate,10L-20L,25.8
+57,Male,No,None,Moderate,10L-20L,21.9
+64,Female,Yes,None,Active,10L-20L,34.6
+50,Female,No,Hypertension,Moderate,<5L,18.2
+45,Male,No,Hypertension,Active,<5L,19.7
+53,Female,No,Heart Disease,Sedentary,10L-20L,28.5
+46,Female,Yes,Hypertension,Moderate,10L-20L,37.8
+28,Female,No,Heart Disease,Sedentary,>20L,31.0
+65,Female,No,Diabetes,Moderate,<5L,17.7
+48,Female,No,Hypertension,Sedentary,5L-10L,20.0
+46,Female,Yes,Heart Disease,Moderate,5L-10L,35.8
+34,Male,No,Hypertension,Active,10L-20L,28.6
+33,Male,Yes,Diabetes,Sedentary,10L-20L,31.5
+58,Male,Yes,Diabetes,Active,>20L,44.0
+35,Female,Yes,Heart Disease,Active,>20L,46.7
+51,Male,No,None,Sedentary,<5L,8.3
+49,Female,Yes,Diabetes,Moderate,5L-10L,31.1
+58,Female,Yes,Diabetes,Moderate,>20L,42.0
+33,Male,Yes,Diabetes,Moderate,5L-10L,29.5
+35,Male,Yes,Diabetes,Active,>20L,41.7
+46,Female,Yes,None,Active,10L-20L,32.8
+22,Male,No,Diabetes,Sedentary,>20L,25.4
+63,Male,No,None,Active,>20L,29.5
+36,Female,No,Hypertension,Moderate,<5L,16.8
+33,Female,Yes,None,Sedentary,10L-20L,26.5
+35,Male,No,Heart Disease,Moderate,10L-20L,29.7
+39,Female,Yes,Hypertension,Sedentary,<5L,24.1
+38,Male,Yes,None,Moderate,5L-10L,25.0
+52,Male,No,None,Active,10L-20L,23.4
+23,Female,No,None,Active,10L-20L,20.5
+26,Female,Yes,None,Moderate,<5L,18.8
+27,Male,Yes,None,Sedentary,5L-10L,20.9
+32,Female,No,None,Active,10L-20L,21.4
+42,Male,No,Heart Disease,Sedentary,<5L,17.4
+62,Female,No,Heart Disease,Moderate,10L-20L,32.4
+27,Female,Yes,Heart Disease,Moderate,>20L,43.9
+63,Male,Yes,None,Moderate,5L-10L,27.5
+31,Female,Yes,Hypertension,Sedentary,>20L,38.3
+22,Male,No,Heart Disease,Active,5L-10L,25.4
+44,Female,Yes,Diabetes,Moderate,<5L,25.6
+44,Male,Yes,Diabetes,Sedentary,10L-20L,32.6
+39,Male,Yes,None,Active,10L-20L,32.1
+52,Female,No,Hypertension,Active,<5L,20.4
+47,Male,No,Heart Disease,Sedentary,10L-20L,27.9
+44,Female,Yes,None,Moderate,>20L,35.6
+21,Male,No,Hypertension,Active,<5L,17.3
+31,Male,Yes,Diabetes,Sedentary,>20L,36.3
+44,Male,No,Heart Disease,Sedentary,5L-10L,22.6
+42,Female,No,None,Active,10L-20L,22.4
+55,Female,No,None,Sedentary,>20L,23.7
+62,Male,No,Hypertension,Moderate,10L-20L,29.4
+19,Female,No,None,Sedentary,5L-10L,10.1
+54,Female,Yes,None,Sedentary,10L-20L,28.6
+42,Male,No,Heart Disease,Sedentary,5L-10L,22.4
+48,Male,No,Diabetes,Sedentary,<5L,13.0
+18,Male,No,Diabetes,Active,10L-20L,25.0
+40,Female,Yes,Hypertension,Moderate,<5L,27.2
+37,Male,No,Diabetes,Sedentary,5L-10L,16.9
+42,Male,Yes,Hypertension,Sedentary,<5L,24.4
+44,Female,Yes,Heart Disease,Sedentary,>20L,42.6
+52,Male,No,Hypertension,Sedentary,<5L,15.4
+65,Female,Yes,Diabetes,Active,>20L,44.7
+65,Male,Yes,None,Active,5L-10L,29.7
+52,Female,No,Heart Disease,Moderate,5L-10L,26.4
+56,Male,Yes,Diabetes,Active,10L-20L,38.8
+32,Male,Yes,Heart Disease,Sedentary,>20L,41.4
+49,Male,No,Hypertension,Active,10L-20L,30.1
+32,Female,Yes,Diabetes,Sedentary,10L-20L,31.4
+35,Female,No,None,Moderate,5L-10L,14.7
+45,Male,No,None,Moderate,<5L,10.7
+49,Male,Yes,None,Active,5L-10L,28.1
+19,Female,No,None,Moderate,5L-10L,13.1
+42,Male,No,Heart Disease,Moderate,<5L,20.4
+39,Male,Yes,Diabetes,Active,>20L,42.1
+60,Male,No,None,Moderate,>20L,27.2
+61,Female,Yes,None,Moderate,<5L,22.3
+43,Female,Yes,None,Sedentary,<5L,17.5
+64,Male,No,Hypertension,Active,10L-20L,31.6
+28,Female,No,Diabetes,Moderate,<5L,14.0
+47,Male,Yes,Heart Disease,Moderate,<5L,30.9
+26,Female,Yes,Hypertension,Sedentary,10L-20L,32.8
+57,Male,No,Hypertension,Active,>20L,35.9
+52,Male,No,Heart Disease,Sedentary,<5L,18.4
+19,Female,Yes,None,Sedentary,<5L,15.1
+43,Male,No,None,Active,10L-20L,22.5
+55,Male,Yes,Diabetes,Moderate,<5L,26.7
+54,Female,No,None,Moderate,10L-20L,21.6
+60,Female,Yes,Hypertension,Active,5L-10L,36.2
+19,Male,Yes,Hypertension,Sedentary,10L-20L,32.1
+23,Female,No,Hypertension,Active,5L-10L,22.5
+59,Female,No,Heart Disease,Moderate,5L-10L,27.1
+45,Female,No,None,Moderate,10L-20L,20.7
+26,Male,No,None,Active,10L-20L,20.8
+47,Female,No,None,Sedentary,10L-20L,17.9
+29,Male,No,None,Moderate,>20L,24.1
+21,Female,No,Diabetes,Sedentary,<5L,10.3
+34,Male,Yes,Diabetes,Active,10L-20L,36.6
+42,Male,Yes,Hypertension,Active,5L-10L,34.4
+38,Female,Yes,Hypertension,Moderate,5L-10L,32.0
+31,Male,Yes,Heart Disease,Moderate,10L-20L,39.3
+47,Male,No,Hypertension,Active,<5L,19.9
+38,Female,Yes,None,Sedentary,<5L,17.0
+39,Female,No,Hypertension,Sedentary,<5L,14.1
+42,Male,Yes,Hypertension,Active,5L-10L,34.4
+35,Female,No,Diabetes,Sedentary,10L-20L,21.7
+44,Female,Yes,None,Moderate,10L-20L,30.6
+34,Male,No,Heart Disease,Active,10L-20L,31.6
+23,Male,No,Heart Disease,Sedentary,5L-10L,20.5
+48,Male,Yes,Heart Disease,Moderate,10L-20L,41.0
+19,Female,Yes,Hypertension,Moderate,5L-10L,30.1
+65,Male,No,Heart Disease,Active,5L-10L,29.7
+52,Female,No,Heart Disease,Moderate,<5L,21.4
+21,Male,Yes,Heart Disease,Sedentary,10L-20L,35.3
+40,Male,No,Diabetes,Active,10L-20L,27.2
+32,Male,Yes,None,Moderate,>20L,34.4
+59,Male,No,Diabetes,Sedentary,<5L,14.1
+22,Female,Yes,None,Moderate,5L-10L,23.4
+59,Female,Yes,Diabetes,Moderate,<5L,27.1
+20,Female,No,None,Active,>20L,25.2
+19,Female,Yes,Heart Disease,Moderate,<5L,28.1
+33,Female,No,Heart Disease,Moderate,<5L,19.5
+30,Male,No,Heart Disease,Sedentary,>20L,31.2
+19,Male,No,Diabetes,Moderate,<5L,13.1
+57,Female,Yes,Heart Disease,Moderate,<5L,31.9
+27,Female,No,Hypertension,Sedentary,>20L,27.9
+33,Male,Yes,None,Moderate,>20L,34.5
+26,Female,Yes,Diabetes,Active,5L-10L,30.8
+48,Female,Yes,Heart Disease,Moderate,>20L,46.0
+60,Male,No,Heart Disease,Moderate,10L-20L,32.2
+25,Female,No,None,Moderate,10L-20L,18.7
+54,Female,Yes,Heart Disease,Moderate,10L-20L,41.6
+31,Female,Yes,Heart Disease,Moderate,5L-10L,34.3
+47,Female,Yes,None,Sedentary,<5L,17.9
+62,Female,Yes,None,Active,>20L,39.4
+34,Female,Yes,Hypertension,Sedentary,5L-10L,28.6
+41,Male,No,Hypertension,Active,<5L,19.3
+28,Female,No,None,Active,>20L,26.0
+56,Female,Yes,Diabetes,Sedentary,<5L,23.8
+56,Female,No,Hypertension,Sedentary,>20L,30.8
+65,Female,No,None,Active,10L-20L,24.7
+63,Male,No,Heart Disease,Moderate,>20L,37.5
+25,Female,No,Diabetes,Sedentary,>20L,25.7
+28,Male,Yes,Heart Disease,Active,5L-10L,36.0
+37,Female,Yes,Hypertension,Moderate,5L-10L,31.9
+24,Male,No,Heart Disease,Moderate,5L-10L,23.6
+55,Female,Yes,Diabetes,Sedentary,10L-20L,33.7
+19,Female,No,None,Sedentary,10L-20L,15.1
+37,Male,Yes,None,Active,>20L,36.9
+54,Male,Yes,Diabetes,Sedentary,5L-10L,28.6
+61,Female,Yes,Heart Disease,Moderate,10L-20L,42.3
+42,Female,Yes,Heart Disease,Sedentary,10L-20L,37.4
+43,Female,No,Diabetes,Sedentary,>20L,27.5
+63,Female,Yes,None,Moderate,>20L,37.5
+30,Female,No,Heart Disease,Moderate,<5L,19.2
+22,Male,No,Hypertension,Sedentary,<5L,12.4
+55,Female,Yes,Diabetes,Active,>20L,43.7
+62,Female,No,Hypertension,Active,<5L,21.4
+58,Female,No,Hypertension,Active,10L-20L,31.0
+33,Male,No,None,Active,>20L,26.5
+24,Female,No,Diabetes,Moderate,>20L,28.6
+62,Female,Yes,Heart Disease,Moderate,5L-10L,37.4
+37,Female,Yes,Heart Disease,Moderate,10L-20L,39.9
+61,Male,No,Diabetes,Moderate,10L-20L,27.3
+56,Male,No,None,Active,5L-10L,18.8
+25,Female,No,Heart Disease,Active,<5L,20.7
+54,Female,No,Heart Disease,Sedentary,>20L,33.6
+20,Male,No,Heart Disease,Moderate,<5L,18.2
+40,Male,No,None,Sedentary,10L-20L,17.2
+52,Male,Yes,Heart Disease,Active,<5L,33.4
+45,Female,Yes,Heart Disease,Sedentary,10L-20L,37.7
+60,Male,No,Hypertension,Sedentary,>20L,31.2
+41,Male,No,None,Sedentary,>20L,22.3
+22,Male,Yes,Heart Disease,Moderate,>20L,43.4
+50,Male,No,None,Moderate,5L-10L,16.2
+59,Female,Yes,None,Active,5L-10L,29.1
+39,Female,No,Heart Disease,Sedentary,5L-10L,22.1
+18,Female,Yes,Heart Disease,Moderate,>20L,43.0
+44,Male,No,None,Active,>20L,27.6
+49,Male,No,None,Moderate,<5L,11.1
+24,Female,No,None,Moderate,10L-20L,18.6
+45,Female,No,Hypertension,Moderate,5L-10L,22.7
+41,Female,No,Diabetes,Moderate,>20L,30.3
+58,Female,Yes,Heart Disease,Active,>20L,49.0
+47,Male,No,Hypertension,Active,10L-20L,29.9
+63,Male,No,Hypertension,Moderate,5L-10L,24.5
+27,Female,Yes,None,Moderate,5L-10L,23.9
+45,Female,Yes,Diabetes,Sedentary,<5L,22.7
+29,Female,Yes,Heart Disease,Moderate,>20L,44.1
+64,Female,No,Hypertension,Sedentary,<5L,16.6
+51,Male,Yes,Heart Disease,Moderate,>20L,46.3
+59,Male,Yes,Hypertension,Active,10L-20L,41.1
+35,Male,Yes,Heart Disease,Active,<5L,31.7
+57,Male,No,None,Sedentary,>20L,23.9
+52,Female,No,None,Active,5L-10L,18.4
+48,Female,Yes,Diabetes,Active,10L-20L,38.0
+47,Male,No,None,Active,>20L,27.9
+45,Female,Yes,Hypertension,Active,<5L,29.7
+64,Female,Yes,Hypertension,Active,<5L,31.6
+55,Female,No,Hypertension,Sedentary,>20L,30.7
+35,Male,Yes,Hypertension,Moderate,10L-20L,36.7
+38,Female,No,None,Moderate,>20L,25.0
+33,Female,Yes,None,Moderate,<5L,19.5
+23,Male,No,Diabetes,Active,<5L,15.5
+35,Male,No,Heart Disease,Active,5L-10L,26.7
+46,Male,Yes,Diabetes,Moderate,5L-10L,30.8
+33,Male,No,Heart Disease,Active,<5L,21.5
+47,Female,Yes,None,Moderate,5L-10L,25.9
+54,Male,Yes,Hypertension,Sedentary,5L-10L,30.6
+57,Female,No,Diabetes,Moderate,>20L,31.9
+60,Male,No,Diabetes,Active,10L-20L,29.2
+42,Female,Yes,None,Moderate,>20L,35.4
+39,Female,No,Heart Disease,Moderate,>20L,35.1
+19,Male,Yes,Diabetes,Active,5L-10L,30.1
+49,Female,Yes,Heart Disease,Sedentary,5L-10L,33.1
+38,Female,Yes,Diabetes,Sedentary,10L-20L,32.0
+29,Male,Yes,Hypertension,Active,10L-20L,38.1
+49,Male,No,None,Moderate,10L-20L,21.1
+31,Female,Yes,Heart Disease,Moderate,>20L,44.3
+40,Male,Yes,None,Active,10L-20L,32.2
+34,Male,Yes,None,Active,<5L,21.6
+39,Male,No,Heart Disease,Active,<5L,22.1
+35,Male,Yes,Heart Disease,Moderate,>20L,44.7
+56,Male,Yes,Diabetes,Sedentary,5L-10L,28.8
+62,Female,No,Heart Disease,Sedentary,10L-20L,29.4
+35,Male,Yes,None,Sedentary,<5L,16.7
+53,Female,No,None,Moderate,10L-20L,21.5
+18,Female,Yes,Heart Disease,Sedentary,<5L,25.0
+51,Female,No,Heart Disease,Moderate,<5L,21.3
+30,Male,Yes,Diabetes,Moderate,10L-20L,34.2
+23,Male,Yes,Diabetes,Active,<5L,25.5
+33,Male,No,Diabetes,Moderate,10L-20L,24.5
+64,Female,Yes,None,Active,<5L,24.6
+44,Female,Yes,Heart Disease,Moderate,5L-10L,35.6
+49,Female,Yes,Hypertension,Active,>20L,45.1
+53,Female,No,Heart Disease,Active,>20L,38.5
+33,Female,No,Heart Disease,Moderate,10L-20L,29.5
+62,Male,No,Diabetes,Moderate,>20L,32.4
+48,Male,Yes,Hypertension,Moderate,>20L,43.0
+59,Female,No,Heart Disease,Moderate,>20L,37.1
+63,Male,Yes,Hypertension,Active,>20L,46.5
+49,Female,Yes,Hypertension,Active,5L-10L,35.1
+46,Female,Yes,Heart Disease,Active,5L-10L,37.8
+19,Female,Yes,Diabetes,Moderate,>20L,38.1
+23,Male,Yes,Diabetes,Moderate,5L-10L,28.5
+36,Male,No,Heart Disease,Sedentary,5L-10L,21.8
+32,Male,No,Hypertension,Sedentary,>20L,28.4
+43,Female,Yes,Hypertension,Sedentary,10L-20L,34.5
+62,Male,Yes,Diabetes,Sedentary,>20L,39.4
+33,Male,No,Diabetes,Active,5L-10L,21.5
+37,Male,No,Diabetes,Sedentary,10L-20L,21.9
+60,Female,Yes,Hypertension,Active,5L-10L,36.2
+55,Male,Yes,Hypertension,Moderate,5L-10L,33.7
+41,Male,Yes,Diabetes,Active,<5L,27.3
+48,Female,Yes,Diabetes,Active,<5L,28.0
+53,Male,Yes,Hypertension,Active,<5L,30.5
+51,Female,No,None,Sedentary,5L-10L,13.3
+40,Female,No,Hypertension,Sedentary,>20L,29.2
+45,Male,No,Heart Disease,Sedentary,>20L,32.7
+65,Female,No,Heart Disease,Moderate,5L-10L,27.7
+53,Male,Yes,Hypertension,Sedentary,<5L,25.5
+39,Female,Yes,Heart Disease,Sedentary,5L-10L,32.1
+40,Male,No,None,Sedentary,>20L,22.2
+62,Female,Yes,None,Moderate,>20L,37.4
+47,Male,Yes,None,Active,>20L,37.9
+35,Male,No,Heart Disease,Sedentary,5L-10L,21.7
+37,Male,Yes,Diabetes,Sedentary,>20L,36.9
+34,Male,No,None,Moderate,>20L,24.6
+32,Female,Yes,None,Active,>20L,36.4
+25,Male,Yes,Diabetes,Sedentary,>20L,35.7
+64,Male,No,Hypertension,Sedentary,10L-20L,26.6
+30,Male,No,Diabetes,Moderate,5L-10L,19.2
+38,Male,Yes,Hypertension,Active,5L-10L,34.0
+25,Female,Yes,Hypertension,Sedentary,>20L,37.7
+65,Male,No,Diabetes,Sedentary,<5L,14.7
+52,Female,No,None,Active,>20L,28.4
+62,Male,Yes,Hypertension,Moderate,5L-10L,34.4
+29,Female,Yes,Diabetes,Moderate,10L-20L,34.1
+30,Female,No,None,Sedentary,>20L,21.2
+31,Female,Yes,Hypertension,Sedentary,10L-20L,33.3
+65,Female,Yes,Heart Disease,Active,<5L,34.7
+48,Male,No,None,Moderate,<5L,11.0
+35,Female,No,Diabetes,Moderate,>20L,29.7
+64,Female,Yes,Heart Disease,Active,10L-20L,44.6
+55,Female,No,Diabetes,Sedentary,<5L,13.7
+51,Male,No,Hypertension,Sedentary,>20L,30.3
+56,Male,No,None,Active,<5L,13.8
+36,Male,Yes,Heart Disease,Sedentary,5L-10L,31.8
+24,Female,No,Heart Disease,Sedentary,10L-20L,25.6
+30,Female,Yes,Heart Disease,Sedentary,>20L,41.2
+36,Female,Yes,Hypertension,Active,<5L,28.8
+32,Female,Yes,None,Moderate,<5L,19.4
+41,Male,Yes,None,Moderate,5L-10L,25.3
+29,Female,No,Hypertension,Moderate,>20L,31.1
+37,Male,Yes,Diabetes,Moderate,<5L,24.9
+18,Female,Yes,Heart Disease,Active,10L-20L,40.0
+63,Female,Yes,Diabetes,Moderate,<5L,27.5
+52,Female,No,Hypertension,Active,10L-20L,30.4
+26,Female,No,Diabetes,Moderate,<5L,13.8
+35,Male,No,Diabetes,Sedentary,>20L,26.7
+20,Female,No,Hypertension,Active,>20L,32.2
+21,Male,No,Heart Disease,Active,>20L,35.3
+53,Female,Yes,Diabetes,Sedentary,10L-20L,33.5
+36,Male,Yes,None,Active,>20L,36.8
+62,Female,No,Diabetes,Active,10L-20L,29.4
+26,Male,Yes,Diabetes,Moderate,10L-20L,33.8
+58,Female,No,None,Active,10L-20L,24.0
+49,Female,Yes,Heart Disease,Active,5L-10L,38.1
+24,Male,Yes,None,Active,<5L,20.6
+18,Male,Yes,Heart Disease,Active,10L-20L,40.0
+54,Male,No,Hypertension,Moderate,10L-20L,28.6
+36,Male,No,Hypertension,Active,<5L,18.8
+48,Female,Yes,Diabetes,Active,>20L,43.0
+48,Female,No,Diabetes,Active,5L-10L,23.0
+46,Female,No,Hypertension,Active,<5L,19.8
+39,Male,Yes,None,Moderate,10L-20L,30.1
+29,Male,Yes,Hypertension,Moderate,<5L,26.1
+21,Female,Yes,Heart Disease,Moderate,10L-20L,38.3
+34,Female,Yes,Diabetes,Active,>20L,41.6
+48,Male,No,None,Sedentary,<5L,8.0
+25,Male,Yes,Diabetes,Sedentary,5L-10L,25.7
+22,Female,No,Hypertension,Moderate,<5L,15.4
+43,Female,Yes,None,Moderate,10L-20L,30.5
+49,Female,No,Hypertension,Moderate,10L-20L,28.1
+22,Female,Yes,Heart Disease,Moderate,5L-10L,33.4
+54,Female,Yes,Hypertension,Moderate,10L-20L,38.6
+58,Male,Yes,None,Sedentary,10L-20L,29.0
+61,Male,Yes,Hypertension,Moderate,10L-20L,39.3
+21,Female,Yes,Diabetes,Sedentary,<5L,20.3
+27,Female,Yes,Diabetes,Sedentary,<5L,20.9
+27,Male,No,None,Active,5L-10L,15.9
+54,Male,No,Diabetes,Sedentary,5L-10L,18.6
+37,Female,No,Heart Disease,Moderate,>20L,34.9
+23,Male,Yes,Heart Disease,Moderate,10L-20L,38.5
+33,Male,No,None,Moderate,5L-10L,14.5
+25,Female,Yes,Hypertension,Active,10L-20L,37.7

@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InsureOne AI</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Existing CSS */
+    * { font-family: 'Inter', sans-serif; }
+    .chat-button {
+      position: fixed;
+      bottom: 100px;
+      right: 40px;
+      z-index: 1000;
+      padding: 12px 18px;
+      border: none;
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      color: white;
+      border-radius: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      font-size: 18px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Added for subtle animation */
+    }
+    .chat-button:hover { /* NEW: Subtle hover animation */
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+    .chat-popup {
+      display: none;
+      position: fixed;
+      bottom: 160px;
+      right: 40px;
+      width: 350px;
+      height: 460px;
+      border-radius: 15px;
+      background: white;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+    }
+    .chat-header {
+      background: #0d6efd;
+      color: white;
+      padding: 12px;
+      font-weight: 600;
+    }
+    .chat-messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px;
+      background: #f9f9f9;
+    }
+    .chat-messages div {
+      margin-bottom: 10px;
+      padding: 8px 12px;
+      border-radius: 10px;
+      max-width: 80%;
+    }
+    .user-message {
+      background: #e0f0ff;
+      align-self: flex-end;
+      margin-left: auto; /* Push user message to the right */
+    }
+    .bot-message {
+      background: #e8e8e8;
+      align-self: flex-start;
+      margin-right: auto; /* Keep bot message to the left */
+    }
+    .chat-input {
+      padding: 10px;
+      border-top: 1px solid #ddd;
+      display: flex;
+      align-items: center; /* Vertically align items */
+    }
+    .chat-input input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+    }
+    /* Initially hide the estimate form section */
+    #estimate {
+      display: none;
+    }
+    .hover-shadow:hover {
+      background-color: #f0f8ff;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* NEW: Styles for login/register messages */
+    .auth-message {
+        margin-top: 10px;
+        font-size: 0.9em;
+    }
+    .auth-message.text-danger {
+        color: #dc3545;
+    }
+    .auth-message.text-success {
+        color: #28a745;
+    }
+
+    /* NEW: Styles for "What If" scenarios */
+    .what-if-scenarios {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px dashed #e0e0e0;
+        background-color: #f8faff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        max-height: 300px; /* Limit height to enable scrolling */
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+    .what-if-scenarios h6 {
+        color: #0d6efd;
+        margin-bottom: 15px;
+        font-size: 1.1em;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .what-if-scenarios h6::before {
+        content: '💡'; /* Lightbulb emoji as an icon */
+        font-size: 1.2em;
+        line-height: 1;
+    }
+    .what-if-scenarios ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+    .what-if-scenarios li {
+        background-color: #e9f5ff;
+        border: 1px solid #cce5ff;
+        border-left: 5px solid #0d6efd;
+        padding: 12px 18px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        font-size: 0.95em;
+        line-height: 1.5;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .what-if-scenarios li:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .what-if-scenarios li strong {
+        color: #333;
+    }
+    .what-if-scenarios li .text-primary {
+        font-size: 1.05em;
+        font-weight: 700;
+    }
+    .what-if-scenarios li .text-success {
+        font-weight: 600;
+    }
+
+    /* NEW: Styles for Diet Recommendations */
+    .diet-recommendations {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px dashed #e0e0e0;
+        background-color: #f0fff0; /* Light green background */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .diet-recommendations h6 {
+        color: #28a745; /* Green color for heading */
+        margin-bottom: 15px;
+        font-size: 1.1em;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .diet-recommendations h6::before {
+        content: '🍎'; /* Apple emoji as an icon */
+        font-size: 1.2em;
+        line-height: 1;
+    }
+    .diet-recommendations ul {
+        list-style: disc; /* Bullet points */
+        padding-left: 20px;
+        margin-bottom: 0;
+    }
+    .diet-recommendations li {
+        margin-bottom: 8px;
+        font-size: 0.95em;
+        line-height: 1.5;
+    }
+    .diet-recommendations li strong {
+        color: #333;
+    }
+
+
+    /* NEW: Animation for Hero Section Element */
+    @keyframes float-hero {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+    .hero-animation-element {
+      width: 100px;
+      height: 100px;
+      background: url('https://cdn-icons-png.flaticon.com/512/1048/1048943.png') no-repeat center center;
+      background-size: contain;
+      margin: 30px auto;
+      animation: float-hero 4s ease-in-out infinite;
+      opacity: 0.8;
+      position: relative;
+    }
+
+    .hero-animation-element::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 10px;
+        background: rgba(0,0,0,0.1);
+        border-radius: 50%;
+        filter: blur(5px);
+    }
+
+     /* Image box limit fix */
+    .hero-img-box img,
+    .about-img-box img,
+    .estimate-img-box img {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Responsive fix for estimate section */
+    @media (max-width: 768px) {
+      #estimate .col-md-6 {
+        margin-bottom: 1rem;
+      }
+    }
+
+    /* Styling for My Estimates Modal cards */
+    #estimates-list .card {
+      border: 1px solid #e0e0e0;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    #estimates-list .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    #estimates-list .card-title {
+      font-size: 1.2em;
+    }
+    #estimates-list .card-subtitle {
+      font-size: 0.85em;
+    }
+    #estimates-list .card-text {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+  </style>
+</head>
+<body style="background-color: #f8f9fa;">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow px-4 py-2 rounded-bottom" style="border-bottom: 1px solid #ddd;">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-primary" href="/">InsureOne AI</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item mx-1">
+          <a class="nav-link px-3 py-2 rounded hover-shadow" href="#estimate" onclick="showEstimateForm()" style="transition: all 0.2s;">Estimate Coverage</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link px-3 py-2 rounded hover-shadow" href="{{ url_for('about') }}">About</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link px-3 py-2 rounded hover-shadow" href="/contact" style="transition: all 0.2s;">Contact Us</a>
+        </li>
+        
+        {# NEW: Authentication Links - This section is dynamically updated by JS #}
+        {# The initial render here provides a fallback/starting point before JS runs #}
+        {% if user_logged_in %}
+        <li class="nav-item mx-1 dropdown" id="auth-nav-item">
+          <a class="nav-link px-3 py-2 rounded hover-shadow dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Welcome, <span id="nav-username">{{ username }}</span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#" onclick="showUserEstimates()">My Estimates</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#" onclick="logoutUser()">Logout</a></li>
+          </ul>
+        </li>
+        {% else %}
+        <li class="nav-item mx-1" id="auth-nav-item">
+          <a class="nav-link px-3 py-2 rounded hover-shadow" href="#" data-bs-toggle="modal" data-bs-target="#authModal">Login / Register</a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="text-center py-5" style="background: linear-gradient(90deg, #e3f2fd, #ffffff);" id="hero-section">
+  <div class="container">
+    <h1 class="display-5 fw-bold text-primary mb-3">Welcome to InsureOne AI</h1>
+    <p class="lead text-muted mb-4">Your smart companion for personalized health insurance coverage estimation.</p>
+    <div class="hero-animation-element"></div> {# NEW: Animated element #}
+    <a href="#" class="btn btn-primary btn-lg px-4 py-2" onclick="showEstimateForm()">Get Your Estimate Now</a>
+  </div>
+</section>
+
+<section class="container py-4" id="about-us-section">
+  <div class="text-center">
+    <h3 class="fw-semibold mb-2 text-dark">About Us</h3>
+    <p class="text-muted">At InsureOne AI, we aim to simplify the insurance process using intelligent estimation and responsive support. Learn more <a href="/about">here</a>.</p>
+  </div>
+</section>
+
+<section class="container mt-5" id="estimate">
+  <h2 class="text-center text-primary mb-4">Estimate Your Insurance Coverage</h2>
+ <form id="estimate-form" class="row g-3">
+  <div class="col-md-6">
+    <label for="age" class="form-label">Age</label>
+    <input type="number" id="age" name="age" class="form-control" min="18" max="80" required>
+  </div>
+  <div class="col-md-6">
+    <label for="gender" class="form-label">Gender</label>
+    <select id="gender" name="gender" class="form-select" required>
+      <option value="">Select</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+  </div>
+  <div class="col-md-6">
+    <label class="form-label">Do you smoke?</label>
+    <div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="smoker" id="smokerYes" value="Yes" required>
+        <label class="form-check-label" for="smokerYes">Yes</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="smoker" id="smokerNo" value="No">
+        <label class="form-check-label" for="smokerNo">No</label>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label class="form-label">Pre-existing Conditions</label>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="Diabetes" name="conditions[]">
+      <label class="form-check-label">Diabetes</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="Hypertension" name="conditions[]">
+      <label class="form-check-label">Hypertension</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="Heart Disease" name="conditions[]">
+      <label class="form-check-label">Heart Disease</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="None" name="conditions[]" checked> {# Check by default if no conditions #}
+      <label class="form-check-label">None</label>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="lifestyle" class="form-label">Lifestyle</label>
+    <select id="lifestyle" name="lifestyle" class="form-select" required>
+      <option value="">Select</option>
+      <option value="Active">Active</option>
+      <option value="Moderate">Moderate</option>
+      <option value="Sedentary">Sedentary</option>
+    </select>
+  </div>
+  <div class="col-md-6">
+    <label for="income" class="form-label">Monthly Income</label>
+    <select id="income" name="income" class="form-select" required>
+      <option value="">Select</option>
+      <option value="< 25000">&lt; ₹25,000</option>
+      <option value="25000-50000">₹25,000 – ₹50,000</option>
+      <option value="50000-100000">₹50,000 – ₹1,00,000</option>
+      <option value="> 100000">&gt; ₹1,00,000</option>
+    </select>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary px-4" id="submit-estimate-button">Get Estimate</button>
+  </div>
+</form>
+  <div class="col-12">
+    <p class="text-muted mt-3">Your estimate will be based on the information provided. For personalized advice, please contact our support team.</p>
+  </div>
+  
+  <div id="estimate-result" class="mt-4 text-center fw-semibold fs-5 text-success"></div>
+  {# NEW: What If Scenarios Display #}
+  <div id="what-if-scenarios" class="what-if-scenarios text-start" style="display: none;">
+    <h6>What if you...</h6>
+    <ul id="what-if-list"></ul>
+  </div>
+  {# NEW: Diet Recommendations Display #}
+  <div id="diet-recommendations" class="diet-recommendations text-start" style="display: none;">
+    <h6>Diet Recommendations to Improve Health</h6>
+    <ul id="diet-list"></ul>
+  </div>
+
+</section>
+
+<button onclick="toggleChat()" class="chat-button" title="Ask me your insurance-related FAQs! 💬">
+  💬 Chat
+</button>
+
+<div id="chat-popup" class="chat-popup">
+  <div class="chat-header">InsureBot 🤖</div>
+  <div id="chat-messages" class="chat-messages">
+    <div class="bot-message">Hello! Ask me anything about insurance. 😊</div>
+  </div>
+  <div class="chat-input">
+  <input id="chat-input" type="text" placeholder="Ask your question..." onkeypress="handleChatInput(event)">
+</div>
+
+</div>
+
+{# NEW: Authentication Modal #}
+<div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="authModalLabel">Authenticate</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="nav nav-tabs mb-3" id="authTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Register</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="authTabsContent">
+          {# Login Form Tab #}
+          <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+            <form id="login-form">
+              <div class="mb-3">
+                <label for="login-username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="login-username" required>
+              </div>
+              <div class="mb-3">
+                <label for="login-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="login-password" required>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Login</button>
+              <div id="login-message" class="auth-message text-center"></div>
+            </form>
+          </div>
+          {# Register Form Tab #}
+          <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+            <form id="register-form">
+              <div class="mb-3">
+                <label for="register-username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="register-username" required>
+              </div>
+              <div class="mb-3">
+                <label for="register-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="register-password" required>
+              </div>
+              <button type="submit" class="btn btn-success w-100">Register</button>
+              <div id="register-message" class="auth-message text-center"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{# NEW: My Estimates Modal #}
+<div class="modal fade" id="myEstimatesModal" tabindex="-1" aria-labelledby="myEstimatesModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myEstimatesModalLabel">My Past Estimates</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="estimates-list">
+          <p class="text-center text-muted">Loading your estimates...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<footer class="text-center text-muted py-4 mt-5 bg-light shadow-sm">
+
+  <div>
+    © 2025 InsureOne AI. Built with ❤️ for smarter insurance.
+  </div>
+  <div class="mt-2">
+    <a href="/about" class="text-muted mx-2">About</a> |
+    <a href="/contact" class="text-muted mx-2">Contact</a> |
+    <a href="#" class="text-muted mx-2">Privacy</a>
+  </div>
+</footer>
+
+<script>
+  // Global variables from Flask's session (rendered by Jinja)
+  // Ensure these are correctly populated by Flask's render_template for initial load
+  const loggedInUserId = "{{ session.get('user_id', '') }}"; // Use .get() for safety
+  const loggedInUsername = "{{ username if username else '' }}"; // Match app.py passing 'username'
+
+  document.addEventListener('DOMContentLoaded', function() {
+    updateAuthUI(); // Call on page load to set initial state
+
+    const isLoggedIn = "{{ session.get('user_id') is not none }}";
+  if (!isLoggedIn || isLoggedIn === "False") {
+    const authModal = new bootstrap.Modal(document.getElementById('authModal'));
+    authModal.show();
+  }
+
+    // Event listeners for auth forms
+    document.getElementById('login-form').addEventListener('submit', loginUser);
+    document.getElementById('register-form').addEventListener('submit', registerUser);
+    
+    // Update estimate coverage unit
+    document.getElementById('estimate-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const age = document.getElementById('age').value;
+      const gender = document.getElementById('gender').value;
+      const smoker = document.querySelector('input[name="smoker"]:checked')?.value;
+      const lifestyle = document.getElementById('lifestyle').value;
+      const income = document.getElementById('income').value;
+
+      const conditionElements = document.querySelectorAll('input[name="conditions[]"]:checked');
+      const conditions = Array.from(conditionElements).map(el => el.value);
+
+      const estimateResultDiv = document.getElementById('estimate-result');
+      const whatIfScenariosDiv = document.getElementById('what-if-scenarios');
+      const whatIfList = document.getElementById('what-if-list');
+      const dietRecommendationsDiv = document.getElementById('diet-recommendations');
+      const dietList = document.getElementById('diet-list');
+
+
+      estimateResultDiv.textContent = 'Calculating estimate...';
+      estimateResultDiv.classList.remove('text-danger');
+      estimateResultDiv.classList.add('text-success');
+      whatIfScenariosDiv.style.display = 'none'; // Hide scenarios until calculated
+      whatIfList.innerHTML = ''; // Clear previous scenarios
+      dietRecommendationsDiv.style.display = 'none'; // Hide diet recs until calculated
+      dietList.innerHTML = ''; // Clear previous diet recs
+
+
+      fetch('/estimate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ age, gender, smoker, lifestyle, income, conditions })
+      })
+      .then(res => res.json())
+      .then(data => {
+        const submitButton = document.getElementById('submit-estimate-button');
+
+        if (data.error) {
+          estimateResultDiv.textContent = `⚠️ Error: ${data.error}`;
+          estimateResultDiv.classList.remove('text-success');
+          estimateResultDiv.classList.add('text-danger');
+          // Button remains visible on error to allow retry
+          if (submitButton) {
+              submitButton.style.display = 'block'; 
+          }
+        } else {
+          estimateResultDiv.textContent =
+            `✅ Your estimated insurance coverage is ₹${(data.estimate).toLocaleString()} Lakhs`;
+          estimateResultDiv.classList.remove('text-danger');
+          estimateResultDiv.classList.add('text-success');
+          // IMPORTANT CHANGE: Removed submitButton.style.display = 'none';
+          // This allows the button to remain visible for re-calculation.
+
+          // --- Display What If Scenarios ---
+          if (data.what_if_scenarios && data.what_if_scenarios.length > 0) {
+              whatIfList.innerHTML = ''; // Clear previous list items
+              data.what_if_scenarios.forEach(scenario => {
+                  const li = document.createElement('li');
+                  li.innerHTML = `
+                    <strong>${scenario.scenario}:</strong> Get <span class="text-primary fw-bold">₹${scenario.estimate.toLocaleString()} Lakhs</span> 
+                    (<span class="text-success">+₹${scenario.difference.toLocaleString()} Lakhs</span>)
+                  `;
+                  whatIfList.appendChild(li);
+              });
+              whatIfScenariosDiv.style.display = 'block';
+          } else {
+              whatIfScenariosDiv.style.display = 'none';
+          }
+
+          // --- Display Diet Recommendations ---
+          const dietRecommendations = generateDietRecommendations(smoker, lifestyle, conditions);
+          if (dietRecommendations.length > 0) {
+              dietList.innerHTML = ''; // Clear previous list items
+              dietRecommendations.forEach(rec => {
+                  const li = document.createElement('li');
+                  li.textContent = rec;
+                  dietList.appendChild(li);
+              });
+              dietRecommendationsDiv.style.display = 'block';
+          } else {
+              dietRecommendationsDiv.style.display = 'none';
+          }
+        }
+      })
+      .catch(error => {
+        console.error('Fetch error:', error);
+        const submitButton = document.getElementById('submit-estimate-button');
+        estimateResultDiv.textContent = '⚠️ An unexpected error occurred. Please check your browser console for details.';
+        estimateResultDiv.classList.remove('text-success');
+        estimateResultDiv.classList.add('text-danger');
+        if (submitButton) {
+            submitButton.style.display = 'block';
+        }
+        whatIfScenariosDiv.style.display = 'none'; // Hide scenarios on error
+        dietRecommendationsDiv.style.display = 'none'; // Hide diet recs on error
+      });
+    });
+  });
+
+  // Chatbot functions (existing)
+  function toggleChat() {
+    const popup = document.getElementById('chat-popup');
+    popup.style.display = popup.style.display === 'none' ? 'flex' : 'none';
+  }
+
+  function handleChatInput(event) {
+    if (event.key === 'Enter') {
+      const input = document.getElementById('chat-input');
+      const message = input.value.trim();
+      if (!message) return;
+      addMessage('user', message);
+      input.value = '';
+
+      // Removed: const mode = document.getElementById('chat-mode').value;
+      fetch('/chatbot', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question: message }) // Removed 'mode' parameter
+      })
+      .then(res => res.json())
+      .then(data => addMessage('bot', data.answer))
+      .catch(() => addMessage('bot', '⚠️ Something went wrong.'));
+    }
+  }
+
+  function addMessage(sender, text) {
+    const container = document.getElementById('chat-messages');
+    const div = document.createElement('div');
+    div.className = sender === 'user' ? 'user-message' : 'bot-message';
+    div.textContent = (sender === 'user' ? '👤 ' : '🤖 ') + text;
+    container.appendChild(div);
+    container.scrollTop = container.scrollHeight;
+  }
+
+  document.getElementById('chat-popup').style.display = 'none';
+
+  document.addEventListener('click', function(event) {
+    const chatPopup = document.getElementById('chat-popup');
+    const chatButton = document.querySelector('button[onclick="toggleChat()"]');
+    // Ensure clicking inside the chat popup or button doesn't close it
+    if (chatPopup.style.display === 'flex' && !chatPopup.contains(event.target) && !chatButton.contains(event.target)) {
+      chatPopup.style.display = 'none';
+    }
+  });
+
+  function showEstimateForm() {
+    const heroSection = document.getElementById('hero-section');
+    const aboutUsSection = document.getElementById('about-us-section');
+    const estimateSection = document.getElementById('estimate');
+    const submitEstimateButton = document.getElementById('submit-estimate-button');
+    const isLoggedIn = "{{ session.get('user_id') is not none }}";
+  if (!isLoggedIn || isLoggedIn === "False") {
+    const authModal = new bootstrap.Modal(document.getElementById('authModal'));
+    authModal.show();
+    return; // Prevent access
+  }
+
+    heroSection.style.display = 'none';
+    aboutUsSection.style.display = 'none';
+    estimateSection.style.display = 'block';
+
+    if (submitEstimateButton) {
+      submitEstimateButton.style.display = 'block';
+    }
+    document.getElementById('estimate-result').textContent = '';
+    document.getElementById('what-if-scenarios').style.display = 'none'; // Hide what-if section on form display
+    document.getElementById('diet-recommendations').style.display = 'none'; // Hide diet recs section on form display
+
+    estimateSection.scrollIntoView({ behavior: 'smooth' });
+  }
+
+
+  // --- Authentication Functions ---
+
+  function updateAuthUI() {
+    const authNavItem = document.getElementById('auth-nav-item'); // Target the li element by ID
+    if (!authNavItem) return;
+
+    // Clear existing content to avoid duplicates during re-render
+    authNavItem.innerHTML = '';
+    authNavItem.className = 'nav-item mx-1'; // Reset classes for clean update
+
+    // If user is logged in
+    if (loggedInUserId) { // `loggedInUserId` is set via Jinja
+      authNavItem.classList.add('dropdown');
+      authNavItem.innerHTML = `
+        <a class="nav-link px-3 py-2 rounded hover-shadow dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Welcome, <span id="nav-username">${loggedInUsername}</span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#" onclick="showUserEstimates()">My Estimates</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#" onclick="logoutUser()">Logout</a></li>
+        </ul>
+      `;
+      // Re-initialize dropdown for dynamically added content (Bootstrap 5)
+      const dropdownElement = authNavItem.querySelector('.dropdown-toggle');
+      if (dropdownElement) {
+          new bootstrap.Dropdown(dropdownElement);
+      }
+
+    } else { // If user is not logged in
+      authNavItem.innerHTML = `
+        <a class="nav-link px-3 py-2 rounded hover-shadow" href="#" data-bs-toggle="modal" data-bs-target="#authModal">Login / Register</a>
+      `;
+    }
+  }
+
+  async function loginUser(event) {
+    event.preventDefault();
+    const username = document.getElementById('login-username').value;
+    const password = document.getElementById('login-password').value;
+    const messageDiv = document.getElementById('login-message');
+
+    messageDiv.className = 'auth-message text-center'; // Reset classes
+    messageDiv.textContent = 'Logging in...';
+
+    try {
+      const response = await fetch('/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password })
+      });
+      const data = await response.json();
+
+      if (response.ok) {
+        messageDiv.textContent = data.message;
+        messageDiv.classList.add('text-success');
+        // Reload the page to ensure Flask session state is reflected
+        window.location.reload(); 
+      } else {
+        messageDiv.textContent = `Error: ${data.error}`;
+        messageDiv.classList.add('text-danger');
+      }
+    } catch (error) {
+      console.error('Login fetch error:', error);
+      messageDiv.textContent = 'An unexpected error occurred during login.';
+      messageDiv.classList.add('text-danger');
+    }
+  }
+
+  async function registerUser(event) {
+    event.preventDefault();
+    const username = document.getElementById('register-username').value;
+    const password = document.getElementById('register-password').value;
+    const messageDiv = document.getElementById('register-message');
+
+    messageDiv.className = 'auth-message text-center'; // Reset classes
+    messageDiv.textContent = 'Registering...';
+
+    try {
+      const response = await fetch('/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password })
+      });
+      const data = await response.json();
+
+      if (response.ok) {
+        messageDiv.textContent = data.message;
+        messageDiv.classList.add('text-success');
+        // Optionally, switch to login tab after successful registration
+        const loginTabTrigger = document.getElementById('login-tab');
+        if (loginTabTrigger) {
+          const tab = new bootstrap.Tab(loginTabTrigger);
+          tab.show();
+        }
+      } else {
+        messageDiv.textContent = `Error: ${data.error}`;
+        messageDiv.classList.add('text-danger');
+      }
+    } catch (error) {
+      console.error('Register fetch error:', error);
+      messageDiv.textContent = 'An unexpected error occurred during registration.';
+      messageDiv.classList.add('text-danger');
+    }
+  }
+
+  async function logoutUser() {
+    try {
+      const response = await fetch('/logout');
+      const data = await response.json();
+      if (response.ok) {
+        console.log(data.message);
+        alert("You have been logged out."); // Simple alert for user feedback
+        // Reload to ensure full UI reset based on Flask session
+        window.location.reload();
+      } else {
+        console.error('Logout error:', data.error);
+        alert(`Logout failed: ${data.error}`);
+      }
+    } catch (error) {
+      console.error('Logout fetch error:', error);
+      alert('An unexpected error occurred during logout.');
+    }
+  }
+
+  // --- NEW: Function to display User's Estimates ---
+  async function showUserEstimates() {
+    const estimatesListDiv = document.getElementById('estimates-list');
+    const myEstimatesModal = new bootstrap.Modal(document.getElementById('myEstimatesModal'));
+    
+    estimatesListDiv.innerHTML = '<p class="text-center text-muted">Loading your estimates...</p>';
+    myEstimatesModal.show(); // Show modal immediately
+
+    try {
+      const response = await fetch('/my_estimates');
+      const data = await response.json();
+
+      if (response.ok) {
+        if (data.estimates && data.estimates.length > 0) {
+          estimatesListDiv.innerHTML = ''; // Clear loading message
+          data.estimates.forEach(estimate => {
+            const estimateCard = document.createElement('div');
+            estimateCard.classList.add('card', 'mb-3', 'shadow-sm');
+            estimateCard.innerHTML = `
+              <div class="card-body">
+                <h5 class="card-title text-primary">Estimated Coverage: ₹${estimate.estimated_amount.toLocaleString()} Lakhs</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  ${new Date(estimate.timestamp).toLocaleString('en-IN', {
+                    year: 'numeric', month: 'short', day: 'numeric',
+                    hour: '2-digit', minute: '2-digit', second: '2-digit',
+                    hour12: true
+                  })}
+                </h6>
+                <p class="card-text">
+                  Age: ${estimate.age}, Gender: ${estimate.gender}, Smoker: ${estimate.smoker},
+                  Lifestyle: ${estimate.lifestyle}, Income: ${estimate.income_bracket}<br>
+                  Conditions: ${estimate.pre_existing_conditions.join(', ') || 'None'}
+                </p>
+              </div>
+            `;
+            estimatesListDiv.appendChild(estimateCard);
+          });
+        } else {
+          estimatesListDiv.innerHTML = '<p class="text-center text-muted">No estimates found yet. Make an estimate to see it here!</p>';
+        }
+      } else {
+        estimatesListDiv.innerHTML = `<p class="text-center text-danger">Error loading estimates: ${data.error}</p>`;
+      }
+    } catch (error) {
+      console.error('Error fetching estimates:', error);
+      estimatesListDiv.innerHTML = '<p class="text-center text-danger">An unexpected error occurred while fetching estimates.</p>';
+    }
+  }
+
+  // NEW: Function to generate diet recommendations
+  function generateDietRecommendations(smoker, lifestyle, conditions) {
+    const recommendations = [];
+
+    if (smoker === "Yes") {
+      recommendations.push("Focus on antioxidant-rich foods: Include berries, dark leafy greens, and citrus fruits to help combat oxidative stress caused by smoking.");
+      recommendations.push("Increase Vitamin C intake: Bell peppers, broccoli, and kiwis are great sources. Smoking depletes Vitamin C.");
+    }
+
+    if (lifestyle === "Sedentary") {
+      recommendations.push("Incorporate more fiber: Add whole grains, legumes, fruits, and vegetables to aid digestion and promote satiety, which can help with weight management.");
+      recommendations.push("Reduce processed foods and sugary drinks: Opt for whole, unprocessed foods to improve energy levels and overall health.");
+    } else if (lifestyle === "Moderate") {
+      recommendations.push("Ensure adequate protein intake: Include lean meats, poultry, fish, eggs, dairy, and plant-based proteins to support muscle maintenance and energy.");
+      recommendations.push("Stay hydrated: Drink plenty of water throughout the day, especially if you engage in moderate physical activity.");
+    } else if (lifestyle === "Active") {
+      recommendations.push("Prioritize complex carbohydrates: Include foods like oats, brown rice, and sweet potatoes for sustained energy to fuel your activity.");
+      recommendations.push("Focus on nutrient-dense foods: Ensure your diet includes a wide variety of fruits, vegetables, and lean proteins to support recovery and overall health.");
+    }
+
+    if (conditions.includes("Diabetes")) {
+      recommendations.push("Monitor carbohydrate intake: Opt for complex carbohydrates with a low glycemic index and limit refined sugars.");
+      recommendations.push("Increase fiber consumption: Foods like oats, beans, and vegetables can help regulate blood sugar levels.");
+      recommendations.push("Choose healthy fats: Incorporate avocados, nuts, seeds, and olive oil in moderation.");
+    }
+    if (conditions.includes("Hypertension")) {
+      recommendations.push("Reduce sodium intake: Limit processed foods, canned soups, and salty snacks. Cook with herbs and spices instead of salt.");
+      recommendations.push("Increase potassium-rich foods: Bananas, spinach, potatoes, and avocados can help counteract the effects of sodium.");
+      recommendations.push("Follow the DASH diet: Dietary Approaches to Stop Hypertension emphasizes fruits, vegetables, whole grains, and lean protein.");
+    }
+    if (conditions.includes("Heart Disease")) {
+      recommendations.push("Limit saturated and trans fats: Avoid fried foods, fatty meats, and many processed snacks. Choose lean proteins and healthy fats.");
+      recommendations.push("Increase omega-3 fatty acids: Found in fatty fish (salmon, mackerel), flaxseeds, and walnuts, these can benefit heart health.");
+      recommendations.push("Boost soluble fiber: Oats, barley, and apples can help lower cholesterol.");
+    }
+    
+    // General healthy eating recommendations if no specific conditions or lifestyle factors trigger others
+    if (recommendations.length === 0 || conditions.includes("None")) {
+        if (!smoker || smoker === "No") { // If not a smoker, add general good habits
+            recommendations.push("Maintain a balanced diet: Focus on whole foods, including a variety of fruits, vegetables, lean proteins, and whole grains.");
+            recommendations.push("Limit added sugars and unhealthy fats: Reduce intake of sweets, sugary drinks, and highly processed foods.");
+            recommendations.push("Practice mindful eating: Pay attention to hunger and fullness cues, and enjoy your meals without distraction.");
+        }
+    }
+
+
+    // Remove duplicates if any
+    return [...new Set(recommendations)];
+  }
+
+</script>
+
+</body>
+</html>

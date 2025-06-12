@@ -1,0 +1,15 @@
+ html {
+    scroll-behavior: smooth;
+  }
+  .chat-input {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.chat-input select {
+  height: 42px;
+}
+
+
